@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="form.css">
+		<title>咖啡單</title>
+	</head>
+
+	<body>
+		<section id="main">
+			<header>
+				<h1>咖啡訂購單</h1>
+				<h2>完成後請按送出</h2>
+			</header>	
+			<form action="http://xxx.php" method="POST">
+				<div class="tableRow">
+					<p>
+						Choose your beans:
+					</p>
+
+					<p>
+						<select name="beans">
+							<option value="藍山咖啡">藍山咖啡</option>
+							<option value="曼特寧咖啡">曼特寧咖啡</option>
+							<option value="巴西咖啡">巴西咖啡</option>
+							<option value="曼巴咖啡">曼巴咖啡</option>
+						</select>
+					</p>
+				</div>
+
+				<div class="tableRow">
+					<p>
+						Type:<br>
+					</p>
+
+					<p>
+						<input type="radio" name="beantype" value="咖啡原豆">咖啡原豆<br>
+						<input type="radio" name="beantype" value="代客研磨">代客研磨<br>
+					</p>
+				</div>
+
+				<div class="tableRow">
+					<p>
+						Extras:<br>
+					</p>
+
+					<p>
+						<input type="checkbox" name="extras[]" value="giftwrap">Gift wrap<br>
+						<input type="checkbox" name="extras[]" value="catalog">Include catalog with order<br>
+					</p>
+				</div>
+				<div class="tableRow">
+					<p>
+						訂購數量: 
+					</p>
+
+					<p>
+						<input type="number" name="bags" min="1" max="20"> 
+					</p>
+				</div>
+				<div class="tableRow">
+					<p>
+						到達日:  
+					</p>
+
+					<p>
+						<input type="date" name="date">
+					</p>
+				</div>
+
+				<div class="tableRow">
+					<p class="heading"> Ship to:</p>
+					<p></p>
+				</div>
+				<div class="tableRow">
+					<p>Name:</p> 
+					<p><input type="text" name="name" value=""> </p>
+				</div>
+				<div class="tableRow">
+					<p>Address:</p>
+					<p><input type="text" name="address" value=""> </p>
+				</div>
+				<div class="tableRow">
+					<p>Phone: </p>
+					<p><input type="tel" name="phone" value=""> </p>
+				</div>
+				<div class="tableRow">
+					<p>e-mail:</p>
+					<p><input type="text" name="e_mail" value=""> </p>
+				</div>
+
+				<div class="tableRow">
+					<p>Customer Comments:</p>
+					<p><textarea name="comments"></textarea></p>
+				</div>
+
+					</p>
+
+				<div class="tableRow">
+					<p></p>
+					<p>
+						<input type="submit" value="Order Now"> <br>
+					</p>
+
+			</form>
+		</section>
+	</body>
+</html>
+
